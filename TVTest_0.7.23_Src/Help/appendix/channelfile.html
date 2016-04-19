@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="ja">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+	<link rel="stylesheet" href="../default.css" type="text/css">
+	<title>チャンネルファイル</title>
+</head>
+<body>
+
+<h2>チャンネルファイル</h2>
+
+<p>
+チャンネルファイルは、チャンネルの設定が保存されているファイルです。<br>
+TVTest では、当初 HDUS 専用だった経緯から、この辺りの仕様が少し複雑になっています。
+</p>
+
+<h3>チャンネルファイルの優先度</h3>
+<p>
+<a href="options/channelscan.html">チャンネルスキャン</a>を行うと、BonDriver と同じベース名の *.ch2 ファイルが作成されます。このファイルが存在する場合、TVTest はこのファイルからチャンネル設定を読み込みます。<br>
+もし *.ch2 ファイルが存在せず、BonDriver と同じベース名の *.ch ファイルが存在する場合はそこから設定を読み込みます。<br>
+*.ch ファイルは、cap_hdus などと互換性のある形式のチャンネルファイルです。詳しくは次の項の説明をご覧ください。<br>
+もしいずれのチャンネルファイルも存在しない場合は、デフォルトで TVTest.ch ファイルを読み込みます。<br>
+TVTest.ch ファイルも存在しない場合は、BonDriver の対応している全てのチャンネルから選択するようになります。
+</p>
+
+<h3>*.ch ファイルのフォーマット</h3>
+<p>
+*.ch ファイルは、cap_hdus や cap_hdus GUI+ と互換性のあるチャンネルファイルです。それらのプログラムで使用していたファイルを流用することができます。<br>
+一行に、<br>
+<span class="nowrap">局名,リモコン番号,チャンネル</span><br>
+という形で記述します。<br>
+例えば、NHK,1,27 のように書きます。ケーブルテレビの場合はチャンネルの前に C を書いて C27 のようにします。<br>
+TVTest.sample.ch ファイルに設定例がありますので、参考にしてください。また、BS/CS 放送の設定例もあります。<br>
+チャンネル設定を書く際は、こちらのページが参考になると思います。<br>
+<a href="http://www.sknet-web.co.jp/support/faq/sk07110201.mht">テレビチャンネル一覧 (IE 専用)</a><br>
+<a href="http://ja.wikipedia.org/wiki/%E3%83%86%E3%83%AC%E3%83%93%E5%91%A8%E6%B3%A2%E6%95%B0%E3%83%81%E3%83%A3%E3%83%B3%E3%83%8D%E3%83%AB">テレビ周波数チャンネル (Wikipedia)</a>
+</p>
+
+</body>
+</html>
