@@ -15,7 +15,10 @@
 */
 #define MULTI2_SSE2				// SSE2‘Î‰ž
 #define MULTI2_SSSE3			// SSSE3‘Î‰ž
-#define MULTI2_SIMD_ICC			// Intel C++ Compiler ‚ð—˜—p‚·‚é
+//#define MULTI2_SIMD_ICC			// Intel C++ Compiler ‚ð—˜—p‚·‚é
+#ifndef __cpuid
+#include <intrin.h>
+#endif
 
 namespace Multi2DecoderSIMD {
 	struct WORKKEY;
