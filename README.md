@@ -23,15 +23,15 @@
    as `Release Win32` and `Release x64`.
 4. open _TVTest_0.7.23_Src\TVTest.sln_ then build _TVTest_ project
    as `Release Win32` and `Release x64`.
-5. Win32 binaries = _TVTest_0.7.23_Src\Win32\Release\TVTest.exe_ and _TVTest_0.7.23_Src\Win32\Release\TVTest_Image.dll_.  
-   x64 binaries = _TVTest_0.7.23_Src\x64\Release\TVTest.exe_ and _TVTest_0.7.23_Src\x64\Release\TVTest_Image.dll_.
+5. Win32 binaries = _TVTest_0.7.23_Src\Win32\Release\TVTest.exe_ and _TVTest_0.7.23_Src\Win32\Release\TVTest_Image.dll_  
+   x64 binaries = _TVTest_0.7.23_Src\x64\Release\TVTest.exe_ and _TVTest_0.7.23_Src\x64\Release\TVTest_Image.dll_
 
 if you want to use sample plugins:
 
 1. open _TVTest_SDK_110123\Samples\Samples_VS2010.sln_ then build solution
     as `Release_static Win32` and `Release_static x64`.
-2. copy _TVTest_SDK_110123\Samples\Release_static\*.(tvtp|dll)_ to _TVTest_0.7.23_Src\Win32\Release\Plugins\._,  
-   and copy _TVTest_SDK_110123\Samples\x64\Release_static\*.(tvtp|dll)_ to _TVTest_0.7.23_Src\x64\Release\Plugins\._.
+2. copy _TVTest_SDK_110123\Samples\Release_static\\\*.(tvtp|dll)_ to _TVTest_0.7.23_Src\Win32\Release\Plugins\\_,  
+   and copy _TVTest_SDK_110123\Samples\x64\Release_static\\\*.(tvtp|dll)_ to _TVTest_0.7.23_Src\x64\Release\Plugins\\_.
 
 ## license
 
