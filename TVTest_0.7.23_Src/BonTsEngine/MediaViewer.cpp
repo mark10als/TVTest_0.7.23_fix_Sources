@@ -40,6 +40,7 @@ static HRESULT SetVideoMediaType(CMediaType *pMediaType, int Width, int Height)
 	// ビデオヘッダ設定
 	VIDEOINFOHEADER2 &VideoHeader = pVideoInfo->hdr;
 	//::SetRect(&VideoHeader.rcSource, 0, 0, Width, Height);
+	VideoHeader.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
 	VideoHeader.bmiHeader.biWidth = Width;
 	VideoHeader.bmiHeader.biHeight = Height;
 	return S_OK;
